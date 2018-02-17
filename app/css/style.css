@@ -1,0 +1,232 @@
+/*For all elements of body*/
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+body{
+	background: #f2f2f2;
+	font-family: "Lato";
+	font-weight: 300;
+	font-size:16px;
+	color:#555;
+	height: 5000px;
+
+	-webkit-font-smoothing: antialiased;
+	-webkit-oevrflow-scrolling: touch;
+}
+
+h1, h2, h3, h4 ,h5, h6{
+	font-family: "Raleway";
+	font-weight: 300;
+	color: #333;
+}
+
+p{
+	line-height: 28px;
+	margin-bottom: 25px;
+}
+.centered{
+	text-align: center;
+}
+
+a{
+	color:#f85c37;
+}
+
+a:hover, a:focus{
+	coor:#7b7b7b;
+	text-decoration: none;
+	outline:0;
+}
+
+/*All for header-menu*/
+button.callback{
+	height:35px;
+	line-height:40%;
+	margin-top: 8px;
+	margin-left: 15px;
+	border-radius:10px;
+	border:none;
+	padding: 15px;
+	width:125px;
+}
+button.callback:hover{
+	background-color: #D41C1C;
+	color:white;
+	transition:.35s;
+}
+
+hr{
+	display: block;
+	height:1px;
+	border:0;
+	border-top:1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+.navbar{
+	font-weight:500;
+	font-size:14px;
+	font-family: "";
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.nav ul li {
+	line-height: 100%;
+}
+
+
+.navbar-inverse .navbar-brand{
+	color:#999;
+	font-weight:bolder;
+	font-size:22px;
+	letter-spacing:3px;
+}
+
+i.fa-adn{
+	font-size:50px;
+	line-height:;
+}
+a.logo{
+	height: 60px;
+	width: 200px;
+	color:#aaa;
+	margin-left: 2%;
+}
+
+
+a.logo > i.vinta{
+	margin-left: 7px;
+	letter-spacing:4px;
+	font-size:30px;
+}
+i.A{
+	font-size:60px;
+	line-height: 75%;
+	font-weight: bolder;
+	font-family: "raleway";
+}
+
+a.logo:hover{
+	text-decoration: none;
+	color: white;
+}
+
+@media (max-width:992px){
+	.navbar-collapse ul li{
+		font-size:13px;
+	}
+	#headerwrap h1.welcome{
+		font-size:40px;
+	}
+	#headerwrap h2.help_you{
+		font-size:23px;
+	}
+}
+
+
+/*For #headewrap*/
+#headerwrap{
+	background: url(../img/business-3141342_1920.jpg) no-repeat center top;
+	margin-top: -10px;
+	padding-top: 20px;
+	text-align:center;
+	background-attachment: relative;
+	background-position:center center;
+	min-height:770px;
+	width:100%;
+
+	background-size: 100%;
+	-webkit-background-size:cover;
+}
+.background{
+	height:770px;
+	background: rgba(0,0,0,0.55);
+}
+#headerwrap h1{
+	padding-top: 100px;
+	color:white;
+	font-size:50px;
+	letter-spacing:3px;
+}
+
+#headerwrap h2{
+	font-size:28px;
+	color:#999;
+	font-family: "late";
+}
+
+/*For content-slider*/
+#slider{
+	width:1200px;
+	height: 340px;
+	margin: 50px auto;
+	background: rgba(200,200,200,0.2);
+	overflow:hidden;
+	margin-top: 120px;
+	border-radius:20px;
+	text-align:left;
+	position:;
+	margin-left:-50px;
+}
+#slider h2{
+	text-align:center;
+}
+#slider button.full{
+	margin-left: 40%;
+}
+.news-content{
+	width: 400px;
+	float: left;
+}
+#polosa{
+	width: 2400px;
+	left:0;
+	position: relative;
+	transition:all 1s ease; 
+}
+.news-content h2, p, button{
+	padding: 8px;
+	color:white;
+}
+
+/*news-line*/
+.col-news{
+margin: auto;
+height: 400px;
+}
+button.prev{
+	float: left;
+}
+button.next{
+	float: right;
+}
+
+@media (max-width:1280px){
+	#slider{
+		width: 800px;
+		margin: 50px auto;
+	}
+}
+
+@media (max-width:992px){
+	#slider{
+		width: 400px;
+	}
+}
+
+/*about*/
+#about{
+	margin-top: 50px;
+	transition: 0.6s;
+}
+#about p{
+	color:black;
+}
+#block_1, #block_2, #block_3{
+	transition: 0.6s;
+	opacity:0;
+}
+
+
+
+
+
