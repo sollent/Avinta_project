@@ -1,3 +1,4 @@
+
 var left = 0;
 
 function sliderNext(){
@@ -24,11 +25,19 @@ function sliderPrev(){
 /*Test functions*/
 
 /*Функция возвращает на сколько прокручена страничка!*/
-setTimeout(getBodyScrollTop(), 100);
+/*setTimeout(getBodyScrollTop(), 100);
 
 function getBodyScrollTop()
 {
 return self.pageYOffset || (document.documentElement && document.documentElement.scrollTop) || (document.body && document.body.scrollTop);
+}*/
+
+Show_main_text();
+
+function Show_main_text(){
+	var captions = document.getElementById("main_text");
+	captions.style.opacity = 1;
+	
 }
 
 function Show_text(){
@@ -39,11 +48,21 @@ function Show_text(){
 	text_2.style.opacity = 1;
 	text_3.style.opacity = 1;
 }
-function ControllValueScroll(){
+/*function ControllValueScroll(){
 	if(getBodyScrollTop() == 1000){
 		Show_text();
 	}else{
 		ControllValueScroll();
 	}
-}
-
+}*/
+var target = $('#about');
+var targetPos = target.offset().top;
+var winHeight = $(window).height();
+var scrollToElem = targetPos - winHeight + 350;
+$(window).scroll(function(){
+  var winScrollTop = $(this).scrollTop();
+  if(winScrollTop > scrollToElem){
+   	//сработает когда пользователь доскроллит к элементу с классом .elem
+  	Show_text();
+  }
+});
