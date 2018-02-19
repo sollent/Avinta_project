@@ -6,7 +6,7 @@ body{
 	font-weight: 300;
 	font-size:16px;
 	color:#555;
-	height: 5000px;
+	height: 3000px;
 	
 	-webkit-font-smoothing: antialiased;
 	-webkit-oevrflow-scrolling: touch;
@@ -190,8 +190,8 @@ a.logo:hover{
 
 /*news-line*/
 .col-news{
-margin: auto;
-height: 400px;
+	margin: auto;
+	height: 400px;
 }
 button.prev{
 	float: left;
@@ -305,5 +305,153 @@ button#consultation{
 	float: right;
 	margin-right: 22%;
 }
+
+/*third page*/
+#four_page{
+	margin-top: 150px;
+}
+.four_page{
+	background: #818181;
+}
+#four_page p{
+	color: white;
+	text-align: center;
+}
+
+/*five page*/
+.five_page{
+	margin-top: 100px;
+	background: #525252;
+}
+#five_page .circle{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: white;
+	
+}
+h2#why_with{
+	color: #E0E0E0;
+	font-family: "ralyway";
+	font-size: 35px;
+}
+h3#h3_in_four_page{
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+#four_page .col-lg-3{
+
+}
+
+@media (min-width:1200px){
+	.five_page{
+		height: 300px;
+	}
+	.five_page .container{
+		margin-top: 50px;
+	}
+}
+@media (max-width: 1200px){
+	#five_page .circle{
+		margin: 65px auto;
+	}
+}
+@media (max-width:992px){
+	#five_page .circle{
+		margin: 65px auto;
+	}
+}
+
+/*footer*/
+#footer{
+	background: #212121;
+}
+.row-footer{
+	margin-top: 30px;
+}
+#rigth-bar-footer h4.for_clients, h4.OOO_Avinta, h4.We_cooperate{
+	color: #ccc;
+}
+#left-bar-footer h3.footer-phone > a{
+	color: #E44D4D;
+}
+#left-bar-footer #footer-logo{
+	text-align: left;
+}
+#left-bar-footer h3.footer-phone{
+	text-align: left;
+}
+#left-bar-footer h3.footer-phone:hover a{
+	text-decoration: none;
+	color: white;
+}
+#left-bar-footer button.question{
+	width: 170px;
+	border-radius: 20px;
+	border: 0;
+	font-weight: bold;
+	font-size: 17px;
+	font-family: "lato";
+	margin-bottom: 35px;
+	margin-top: 10px;
+	float: left;
+}
+#left-bar-footer button.question:hover{
+	background: #E24141;
+	color: white;
+}
+#left-bar-footer i.vinta-footer{
+	margin-left: 7px;
+	letter-spacing:4px;
+	font-size:30px;	
+	color: #ccc;
+}
+#left-bar-footer a.logo-footer:hover{
+	text-decoration: none;
+}
+#left-bar-footer i.vinta-footer:hover{
+	color: white;
+
+}
+
+#rigth-bar-footer ul li{
+	list-style: none;
+	margin-top: 5px;
+}
+#rigth-bar-footer ul{
+	float: left;
+	margin-left: 10%;
+}
+#rigth-bar-footer ul li a{
+	font-size: 16px;
+	color: #A4A4A4;
+	font-family: "ralyway";
+}
+#rigth-bar-footer ul li a:hover{
+	color: white;
+	text-decoration: none;
+}
+/*a.logo > i.vinta{
+	margin-left: 7px;
+	letter-spacing:4px;
+	font-size:30px;
+}
+i.A{
+	font-size:60px;
+	line-height: 75%;
+	font-weight: bolder;
+	font-family: "raleway";
+	}*/
+
+
+
+
+
+
+
+
+
 
 
