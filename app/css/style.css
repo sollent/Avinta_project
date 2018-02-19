@@ -1,5 +1,6 @@
 /*For all elements of body*/
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&subset=cyrillic-ext');
 body{
 	background: #f2f2f2;
 	font-family: "Lato";
@@ -7,7 +8,7 @@ body{
 	font-size:16px;
 	color:#555;
 	height: 3000px;
-	
+
 	-webkit-font-smoothing: antialiased;
 	-webkit-oevrflow-scrolling: touch;
 }
@@ -15,7 +16,7 @@ body{
 h1, h2, h3, h4 ,h5, h6{
 	font-family: "Raleway";
 	font-weight: 300;
-	color: #333;
+	color: #000;
 }
 
 p{
@@ -131,15 +132,15 @@ a.logo:hover{
 	text-align:center;
 	background-attachment: relative;
 	background-position:center center;
-	min-height:770px;
+	height: auto;
 	width:100%;
-
 	background-size: 100%;
 	-webkit-background-size:cover;
 }
 .background{
-	height:770px;
+	/* height:770px; */
 	background: rgba(0,0,0,0.55);
+	padding: 100px 0;
 }
 #headerwrap h1{
 	padding-top: 100px;
@@ -150,7 +151,7 @@ a.logo:hover{
 
 #headerwrap h2{
 	font-size:28px;
-	color:#999;
+	color: #e1e1e1;
 	font-family: "late";
 }
 
@@ -181,7 +182,7 @@ a.logo:hover{
 	width: 2400px;
 	left:0;
 	position: relative;
-	transition:all 1s ease; 
+	transition:all 1s ease;
 }
 .news-content h2, p, button{
 	padding: 8px;
@@ -220,20 +221,22 @@ button.next{
 }
 
 #second_page{
-	background:linear-gradient(45deg, rgb(200,200,200), white);
+	background: #f5f5f5;
 }
 
 #about p{
 	color:black;
 }
 #block_1, #block_2, #block_3{
-	transition: 2.5s;
+	transition: .5s;
+	transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
 	opacity:0;
 	border-radius: 10px;
 	padding: 20px;
 	background: rgba(0,0,0,0.1);
 	min-height: 100%;
 	margin-bottom: 50px;
+	margin-top: 150px;
 }
 
 /*Animation for main text*/
@@ -294,7 +297,7 @@ h2#popular_service{
 	#service{
 		margin-top: 30px;
 	}
-	
+
 }
 
 button#to_order{
@@ -309,36 +312,46 @@ button#consultation{
 /*third page*/
 #four_page{
 	margin-top: 150px;
+	padding-bottom: 30px;
+	padding: 0;
 }
 .four_page{
-	background: #818181;
 }
 #four_page p{
-	color: white;
+	color: #f5f5f5;
 	text-align: center;
+	font-weight: 400;
+	font-family: ubuntu;
+	font-size: 15px;
 }
 
 /*five page*/
 .five_page{
-	margin-top: 100px;
-	background: #525252;
+	/* margin-top: 100px; */
+	background: #f5f5f5;
+	padding: 40px 0;
 }
 #five_page .circle{
 	width: 200px;
 	height: 200px;
+	margin: 0 auto;
 	border-radius: 50%;
 	background: white;
-	
+	box-shadow: 0 1px 3px #00000030;
 }
 h2#why_with{
-	color: #E0E0E0;
+	color: #333;
 	font-family: "ralyway";
 	font-size: 35px;
+	margin-bottom: 40px;
 }
 h3#h3_in_four_page{
 	font-size: 18px;
 	font-weight: bold;
 	letter-spacing: 2px;
+	color: #fff;
+	font-family: ubuntu;
+	text-transform: uppercase;
 }
 
 #four_page .col-lg-3{
@@ -347,10 +360,10 @@ h3#h3_in_four_page{
 
 @media (min-width:1200px){
 	.five_page{
-		height: 300px;
+		/* height: 300px; */
 	}
 	.five_page .container{
-		margin-top: 50px;
+		/* margin-top: 50px; */
 	}
 }
 @media (max-width: 1200px){
@@ -405,7 +418,7 @@ h3#h3_in_four_page{
 #left-bar-footer i.vinta-footer{
 	margin-left: 7px;
 	letter-spacing:4px;
-	font-size:30px;	
+	font-size:30px;
 	color: #ccc;
 }
 #left-bar-footer a.logo-footer:hover{
@@ -446,12 +459,40 @@ i.A{
 	}*/
 
 
+* {
+	outline: none;
+}
+a, button, input, select, textarea {
+	font-family: Arial !important;
+}
+h2 {
+  font-family: inherit !important;
+}
+button.callback {
+	width: auto;
+	font-family: Ubuntu !important;
+}
+#block_1,
+#block_2,
+#block_3 {
+	background: rgb(255, 255, 255);
+	border-radius: 4px;
+	box-shadow: 0 1px 3px #00000042;
+}
 
-
-
-
-
-
-
-
-
+.empl_name {
+	text-align: center;
+	margin-top: 15px;
+	font-family: ubuntu;
+	font-size: 18px;
+	font-weight: 500;
+}
+.empl_position {
+	text-align: center;
+	font-family: ubuntu;
+	font-size: 15px;
+}
+.four_page-content {
+	background: #4CAF50;
+	padding: 40px 0;
+}

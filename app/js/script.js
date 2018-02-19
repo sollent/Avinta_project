@@ -17,7 +17,7 @@ function sliderPrev(){
 	if(left == 0){
 		left = -1600;
 	}
-	polosa.style.left = left + a*400 + 'px'; 
+	polosa.style.left = left + a*400 + 'px';
 	a++;
 }
 
@@ -37,7 +37,7 @@ Show_main_text();
 function Show_main_text(){
 	var captions = document.getElementById("main_text");
 	captions.style.opacity = 1;
-	
+
 }
 
 function Show_text(){
@@ -47,6 +47,9 @@ function Show_text(){
 	text_1.style.opacity = 1;
 	text_2.style.opacity = 1;
 	text_3.style.opacity = 1;
+	text_1.style.marginTop = '0';
+	text_2.style.marginTop = '0';
+	text_3.style.marginTop = '0';
 }
 /*function ControllValueScroll(){
 	if(getBodyScrollTop() == 1000){
@@ -61,7 +64,7 @@ var winHeight = $(window).height();
 var scrollToElem = targetPos - winHeight + 350;
 $(window).scroll(function(){
   var winScrollTop = $(this).scrollTop();
-  if(winScrollTop > scrollToElem){
+  if(winScrollTop > (scrollToElem * 1)){
    	//сработает когда пользователь доскроллит к элементу с классом .elem
   	Show_text();
   }
