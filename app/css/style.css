@@ -3,18 +3,17 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&subset=cyrillic-ext');
 body{
 	background: #f2f2f2;
-	font-family: "Lato";
+	/* font-family: "Lato"; */
 	font-weight: 300;
 	font-size:16px;
 	color:#555;
 	height: 3000px;
-
 	-webkit-font-smoothing: antialiased;
 	-webkit-oevrflow-scrolling: touch;
 }
 
 h1, h2, h3, h4 ,h5, h6{
-	font-family: "Raleway";
+	/* font-family: "Raleway"; */
 	font-weight: 300;
 	color: #000;
 }
@@ -49,7 +48,7 @@ button.callback{
 	width:125px;
 }
 button.callback:hover{
-	background-color: #D41C1C;
+	background-color: #388E3C;
 	color:white;
 	transition:.35s;
 }
@@ -89,7 +88,7 @@ i.fa-adn{
 a.logo{
 	height: 60px;
 	width: 200px;
-	color:#aaa;
+	color: #f5f5f5;
 	margin-left: 2%;
 }
 
@@ -147,6 +146,7 @@ a.logo:hover{
 	color:white;
 	font-size:50px;
 	letter-spacing:3px;
+	font-family: "Lato";
 }
 
 #headerwrap h2{
@@ -395,6 +395,7 @@ h3#h3_in_four_page{
 }
 #left-bar-footer h3.footer-phone{
 	text-align: left;
+	color: #999;
 }
 #left-bar-footer h3.footer-phone:hover a{
 	text-decoration: none;
@@ -410,9 +411,11 @@ h3#h3_in_four_page{
 	margin-bottom: 35px;
 	margin-top: 10px;
 	float: left;
+	background: #4caf50;
+	color: #f5f5f5;
 }
 #left-bar-footer button.question:hover{
-	background: #E24141;
+	background: #388E3C;
 	color: white;
 }
 #left-bar-footer i.vinta-footer{
@@ -471,6 +474,8 @@ h2 {
 button.callback {
 	width: auto;
 	font-family: Ubuntu !important;
+	color: #fff;
+	background: #4caf50;
 }
 #block_1,
 #block_2,
@@ -495,4 +500,35 @@ button.callback {
 .four_page-content {
 	background: #4CAF50;
 	padding: 40px 0;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #43A047;
+    border-radius: 4px;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #43A047;
+    border-radius: 4px;
+}
+
+.service {
+	background: #fff;
+	padding: 40px;
+	box-shadow: 0 1px 2px #0000001f;
+	border-radius: 4px;
+}
+
+#third_page {
+	background: #f9f9f9;
+}
+
+a {
+    color: #4caf50;
+    text-decoration: none;
+}
+a:focus, a:hover {
+    color: #388E3C;
+    text-decoration: underline;
 }
