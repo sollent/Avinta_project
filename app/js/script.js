@@ -32,8 +32,22 @@ function getBodyScrollTop()
 return self.pageYOffset || (document.documentElement && document.documentElement.scrollTop) || (document.body && document.body.scrollTop);
 }*/
 
-Show_main_text();
+window.onload=function(){
+		Show_main_text();	/* ваш код */
+		
+}
 
+		var target = $('#service_row');
+		var targetPos = target.offset().top;
+		var winHeight = $(window).height();
+		var scrollToElem = targetPos - winHeight + 2500;
+		$(window).scroll(function(){
+  	var winScrollTop = $(this).scrollTop();
+  	if(winScrollTop > (scrollToElem * 1)){
+   	//сработает когда пользователь доскроллит к элементу с классом .elem
+  	Show_services();
+  }
+});
 function Show_main_text(){
 	var captions = document.getElementById("main_text");
 	captions.style.opacity = 1;
@@ -51,6 +65,13 @@ function Show_text(){
 	text_2.style.marginTop = '0';
 	text_3.style.marginTop = '0';
 }
+function Show_services(){
+	var elem_1 = document.getElementById("animation_left"),
+			elem_2 = document.getElementById("animation_right");
+	elem_1.style.marginLeft = 0;
+	elem_2.style.marginLeft = 0;		
+}
+
 /*function ControllValueScroll(){
 	if(getBodyScrollTop() == 1000){
 		Show_text();
@@ -61,7 +82,7 @@ function Show_text(){
 var target = $('#about');
 var targetPos = target.offset().top;
 var winHeight = $(window).height();
-var scrollToElem = targetPos - winHeight + 350;
+var scrollToElem = targetPos - winHeight+350;
 $(window).scroll(function(){
   var winScrollTop = $(this).scrollTop();
   if(winScrollTop > (scrollToElem * 1)){

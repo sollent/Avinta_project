@@ -62,6 +62,12 @@ hr{
 	padding: 0;
 }
 
+	.img_block {
+		height: 265px;
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+
 .navbar{
 	font-weight:500;
 	font-size:14px;
@@ -110,9 +116,18 @@ a.logo:hover{
 	color: white;
 }
 
+@media (min-width: 1071px) {
+	.four_block-item {
+		border-right: 1px solid #00000029;
+	}
+	.four_block-item:last-child {
+		border-color: transparent;
+	}
+}
+
 @media (max-width:992px){
 	.navbar-collapse ul li{
-		font-size:13px;
+		font-size:11.5px;
 	}
 	#headerwrap h1.welcome{
 		font-size:40px;
@@ -122,7 +137,11 @@ a.logo:hover{
 	}
 }
 
-
+@media (max-width:768px){
+	.navbar-collapse ul li{
+		font-size:11px;
+	}
+}
 /*For #headewrap*/
 #headerwrap{
 	background: url(../img/business-3141342_1920.jpg) no-repeat center top;
@@ -228,7 +247,7 @@ button.next{
 	color:black;
 }
 #block_1, #block_2, #block_3{
-	transition: .5s;
+	transition: 1.5s;
 	transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
 	opacity:0;
 	border-radius: 10px;
@@ -245,53 +264,57 @@ button.next{
 	opacity: 0;
 }
 
+
 #about i{
 	font-size:30px;
 }
 
 
 h2#popular_service{
-	margin-top: 60px;
+	/* margin-top: 60px; */
 }
 #service p{
 	color:black;
 	text-align: justify;
 }
 
-#service button{
-	width: 130px;
-	height: 30px;
+#service button {
 	border-radius: 10px;
 	border:0;
-	background: #ccc;
+	background: #4caf50;
+	width: 45%;
+	padding: 10px 0;
+}
+#service button:hover {
+	background: #388E3C;
+}
+button#consultation:hover {
+	background: #e5e5e5;
 }
 
 #service img{
 	width: 100%;
-	margin-top: 15px;
-	margin-bottom: 30px;
-	height: 330px;
+	/* margin-top: 15px; */
+	/* margin-bottom: 30px; */
 }
 
 #service{
-	margin-top: 20px;
+	/* margin-top: 20px; */
 }
 
 @media (max-width: 1320px){
 	#service img{
 		width:100%;
-		height: 100%;
 	}
 	#service{
 		margin-top: 100px;
 	}
-	#service button{
-		width: 220px;
-		height: 50px;
+	.img_block {
+		height: 200px;
 	}
-
-
 }
+
+
 
 @media (max-width: 1452px) and (min-width: 1320px){
 	#service{
@@ -302,16 +325,17 @@ h2#popular_service{
 
 button#to_order{
 	float: left;
-	margin-left: 22%;
 }
 button#consultation{
 	float: right;
-	margin-right: 22%;
+	background: #f5f5f5;
+	color: #333;
 }
+
 
 /*third page*/
 #four_page{
-	margin-top: 150px;
+	margin-top: 40px;
 	padding-bottom: 30px;
 	padding: 0;
 }
@@ -341,9 +365,9 @@ button#consultation{
 }
 h2#why_with{
 	color: #333;
-	font-family: "ralyway";
-	font-size: 35px;
-	margin-bottom: 40px;
+	/* font-family: "ralyway"; */
+	/* font-size: 35px; */
+	/* margin-bottom: 40px; */
 }
 h3#h3_in_four_page{
 	font-size: 18px;
@@ -462,73 +486,118 @@ i.A{
 	}*/
 
 
-* {
-	outline: none;
-}
-a, button, input, select, textarea {
-	font-family: Arial !important;
-}
-h2 {
-  font-family: inherit !important;
-}
-button.callback {
-	width: auto;
-	font-family: Ubuntu !important;
-	color: #fff;
-	background: #4caf50;
-}
-#block_1,
-#block_2,
-#block_3 {
-	background: rgb(255, 255, 255);
-	border-radius: 4px;
-	box-shadow: 0 1px 3px #00000042;
-}
+	* {
+		outline: none;
+	}
+	a, button, input, select, textarea {
+		font-family: Arial !important;
+	}
+	h2 {
+		font-family: ubuntu;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 27px;
+		text-align: center;
+		margin: 50px 0 50px;
+	}
+	button.callback {
+		width: auto;
+		font-family: Ubuntu !important;
+		color: #fff;
+		background: #4caf50;
+	}
+	#block_1,
+	#block_2,
+	#block_3 {
+		background: rgb(255, 255, 255);
+		border-radius: 4px;
+		box-shadow: 0 1px 3px #00000042;
+	}
 
-.empl_name {
-	text-align: center;
-	margin-top: 15px;
-	font-family: ubuntu;
-	font-size: 18px;
-	font-weight: 500;
-}
-.empl_position {
-	text-align: center;
-	font-family: ubuntu;
-	font-size: 15px;
-}
-.four_page-content {
-	background: #4CAF50;
-	padding: 40px 0;
-}
+	.empl_name {
+		text-align: center;
+		margin-top: 15px;
+		font-family: ubuntu;
+		font-size: 18px;
+		font-weight: 500;
+	}
+	.empl_position {
+		text-align: center;
+		font-family: ubuntu;
+		font-size: 15px;
+	}
+	.four_page-content {
+		background: #4CAF50;
+		padding: 40px 0;
+	}
 
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-    color: #fff;
-    background-color: #43A047;
-    border-radius: 4px;
-}
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-    color: #fff;
-    background-color: #43A047;
-    border-radius: 4px;
-}
+	.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+		color: #fff;
+		background-color: #43A047;
+		border-radius: 4px;
+	}
+	.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+		color: #fff;
+		background-color: #43A047;
+		border-radius: 4px;
+	}
+	#service{
+		overflow: hidden;
+	}
+	.service{
+		transition: 1.5s;
+		/* padding-top: 50px; */
+	}
+	#animation_left{
+		margin-left:-50vw;
+	}
+	#animation_right{
+		margin-left: 50vw;
+	}
+	.service {
+		background: #fff;
+		padding: 40px 60px;
+		box-shadow: 0 1px 2px #0000001f;
+		border-radius: 4px;
+		overflow: hidden;
+		width: 100%;
+	}
 
-.service {
-	background: #fff;
-	padding: 40px;
-	box-shadow: 0 1px 2px #0000001f;
-	border-radius: 4px;
-}
+	.row
+	#third_page {
+		background: #f9f9f9;
+		padding-bottom: 40px;
+	}
 
-#third_page {
-	background: #f9f9f9;
-}
+	a {
+		color: #4caf50;
+		text-decoration: none;
+	}
+	a:focus, a:hover {
+		color: #388E3C;
+		text-decoration: underline;
+	}
+	@media (max-width:1200px){
+		#rigth-bar-footer #ul_for_clients, #ul_OOO_Avinta{
+			display: none;
+		}
+	}
+	@media (max-width: 768px){
+		#rigth-bar-footer #inform_We_cooperate{
+			display: none;
+		}	
+		#left-bar-footer{
+			margin-left: 30%;
+		}
+	}
+	@media (max-width: 540px){
+		#left-bar-footer{
+			margin-left: 22%;
+		}		
+	}
+	@media (max-width: 410px){
+		#left-bar-footer{
+			margin-left: 10%;
+		}		
+	}
 
-a {
-    color: #4caf50;
-    text-decoration: none;
-}
-a:focus, a:hover {
-    color: #388E3C;
-    text-decoration: underline;
-}
